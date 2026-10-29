@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create_drugs:cannabis_crop",
+    "create_drugs:coca_crop",
+    "create_drugs:tobacco_crop"
+  ]
+}

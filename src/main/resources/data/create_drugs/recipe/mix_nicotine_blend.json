@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_drugs:dried_tobacco"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:nicotine_blend",
+      "count": 2
+    }
+  ],
+  "processing_time": 100
+}

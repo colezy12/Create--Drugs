@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:blotter_paper",
+      "count": 2
+    }
+  ]
+}

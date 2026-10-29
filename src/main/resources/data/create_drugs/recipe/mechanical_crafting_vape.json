@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    " I ",
+    " C ",
+    " R "
+  ],
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "C": {
+      "item": "create_drugs:vape_cartridge"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "create_drugs:vape",
+    "count": 1
+  }
+}

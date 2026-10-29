@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create_drugs:cannabis_seeds",
+    "create_drugs:coca_seeds",
+    "create_drugs:tobacco_seeds"
+  ]
+}

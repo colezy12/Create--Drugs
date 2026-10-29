@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_drugs:herbalist_table",
+    "create_drugs:dealer_counter"
+  ]
+}

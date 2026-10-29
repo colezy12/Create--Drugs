@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_drugs:nicotine_blend"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:vape_cartridge",
+      "count": 2
+    }
+  ],
+  "processing_time": 100
+}

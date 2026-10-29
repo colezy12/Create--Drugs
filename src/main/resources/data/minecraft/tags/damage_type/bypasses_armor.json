@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "create_drugs:withdrawal_1",
+    "create_drugs:withdrawal_2",
+    "create_drugs:withdrawal_3",
+    "create_drugs:popcorn_lung_1",
+    "create_drugs:popcorn_lung_2",
+    "create_drugs:popcorn_lung_3"
+  ]
+}

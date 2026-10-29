@@ -1,0 +1,29 @@
+{
+  "consume": {
+    "subtitle": "subtitles.create_drugs.consume",
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.drink",
+        "type": "event"
+      }
+    ]
+  },
+  "inhale": {
+    "subtitle": "subtitles.create_drugs.inhale",
+    "sounds": [
+      {
+        "name": "minecraft:block.fire.extinguish",
+        "type": "event"
+      }
+    ]
+  },
+  "withdrawal": {
+    "subtitle": "subtitles.create_drugs.withdrawal",
+    "sounds": [
+      {
+        "name": "minecraft:entity.enderman.stare",
+        "type": "event"
+      }
+    ]
+  }
+}

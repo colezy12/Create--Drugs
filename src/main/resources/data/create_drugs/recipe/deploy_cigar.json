@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_drugs:dried_tobacco"
+    },
+    {
+      "item": "create_drugs:tobacco_leaf"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:cigar",
+      "count": 1
+    }
+  ]
+}

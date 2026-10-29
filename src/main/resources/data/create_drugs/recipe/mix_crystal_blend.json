@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:crystal_blend",
+      "count": 2
+    }
+  ],
+  "processing_time": 100,
+  "heat_requirement": "heated"
+}

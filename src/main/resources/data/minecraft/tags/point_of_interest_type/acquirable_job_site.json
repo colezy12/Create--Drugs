@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_drugs:herbalist",
+    "create_drugs:dealer"
+  ]
+}

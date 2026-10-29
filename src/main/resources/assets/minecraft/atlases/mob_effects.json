@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:mob_effect/nausea",
+      "sprite": "create_drugs:intoxication"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:mob_effect/weakness",
+      "sprite": "create_drugs:nicotine_withdrawal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:mob_effect/regeneration",
+      "sprite": "create_drugs:nicotine_patch"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:mob_effect/resistance",
+      "sprite": "create_drugs:drunk"
+    }
+  ]
+}

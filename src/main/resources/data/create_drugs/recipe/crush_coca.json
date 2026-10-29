@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_drugs:coca_leaf"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:coca_dust",
+      "count": 2
+    }
+  ],
+  "processing_time": 100
+}

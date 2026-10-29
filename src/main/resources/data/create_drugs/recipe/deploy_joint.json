@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_drugs:dried_cannabis"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:joint",
+      "count": 1
+    }
+  ]
+}

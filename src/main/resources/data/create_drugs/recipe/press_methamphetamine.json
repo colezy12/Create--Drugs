@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_drugs:crystal_blend"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:methamphetamine",
+      "count": 1
+    }
+  ]
+}

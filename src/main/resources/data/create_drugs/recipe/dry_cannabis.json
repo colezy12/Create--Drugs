@@ -1,0 +1,14 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "create_drugs:cannabis_leaf"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:dried_cannabis",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "create_drugs:beer",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:beer",
+      "count": 1
+    }
+  ]
+}

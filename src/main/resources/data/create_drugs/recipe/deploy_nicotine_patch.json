@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "create_drugs:nicotine_blend"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:nicotine_patch",
+      "count": 2
+    }
+  ]
+}

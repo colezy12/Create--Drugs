@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_drugs:vape"
+    },
+    {
+      "item": "create_drugs:vape_cartridge"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:vape",
+      "count": 1
+    }
+  ]
+}

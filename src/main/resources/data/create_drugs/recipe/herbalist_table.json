@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:crafting_table"
+    },
+    {
+      "item": "minecraft:flower_pot"
+    },
+    {
+      "item": "create_drugs:cannabis_seeds"
+    }
+  ],
+  "result": {
+    "id": "create_drugs:herbalist_table",
+    "count": 1
+  }
+}

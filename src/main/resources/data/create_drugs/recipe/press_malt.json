@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_drugs:malt",
+      "count": 2
+    }
+  ]
+}
