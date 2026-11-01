@@ -82,7 +82,7 @@ Additional transparent item textures (16x16 or 32x32), in `textures/item/`:
 
 - `tobacco_seeds.png`, `tobacco_leaf.png`, `dried_tobacco.png`
 - `nicotine_blend.png`, `vape_cartridge.png`, `vape.png`, `cigar.png`
-- `nicotine_patch.png`, `malt.png`, `beer.png`, `beer_bucket.png`, `empty_beer_bottle.png`, `textures/block/cocaine_block.png` (opaque 16x16; used on a flat 1px plate on the depot and as the inventory item)
+- `nicotine_patch.png`, `malt.png`, `beer.png`, `beer_bucket.png`, `empty_beer_bottle.png`
   (the thrown bottle reuses this texture)
 
 Additional crop stages in `textures/block/`:

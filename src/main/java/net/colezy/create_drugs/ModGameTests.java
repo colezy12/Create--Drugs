@@ -18,7 +18,7 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 public class ModGameTests {
     @GameTest(template = "empty")
     public static void recipesLoadWithCreate(GameTestHelper helper) {
-        String[] names = {"press_cocaine_block", "cannabis_seeds", "coca_seeds", "joint", "dry_cannabis", "mill_coca",
+        String[] names = {"cannabis_seeds", "coca_seeds", "joint", "dry_cannabis", "mill_coca",
                 "crush_coca", "mix_cocaine", "mix_crystal_blend", "press_methamphetamine",
                 "press_blotter_paper", "mix_lsd", "deploy_joint", "herbalist_table", "dealer_counter",
                 "tobacco_seeds", "dry_tobacco", "mix_nicotine_blend", "deploy_cigar", "mix_vape_cartridge",

@@ -14,7 +14,7 @@ ITEMS = ['cannabis_seeds', 'coca_seeds', 'cannabis_leaf', 'coca_leaf', 'dried_ca
          'tobacco_seeds', 'tobacco_leaf', 'dried_tobacco', 'nicotine_blend', 'vape_cartridge', 'vape',
          'cigar', 'nicotine_patch', 'malt', 'beer', 'beer_bucket', 'empty_beer_bottle']
 CROPS = [f'{crop}_crop_stage{i}' for crop in ('cannabis', 'coca', 'tobacco') for i in range(8)]
-BLOCKS = ['herbalist_table', 'dealer_counter', 'cocaine_block']
+BLOCKS = ['herbalist_table', 'dealer_counter']
 EFFECTS = ['intoxication', 'nicotine_withdrawal', 'nicotine_patch', 'drunk']
 
 GUIDE = (255, 0, 255, 255)

@@ -59,7 +59,6 @@ public class Create_drugs {
                     .build());
     public Create_drugs(IEventBus bus, ModContainer container) {
         NicotineContent.init();
-        CocaineBlock.init();
         AlcoholContent.init();
         AlcoholContent.register(bus);
         BeerFluids.register(bus);

@@ -235,16 +235,6 @@ to reverse this so drunkenness worsens aim. Empty bottles can be refilled at a s
 Malt is pressed to avoid competing with Create's
 existing wheat-to-flour milling recipe.
 
-## Compressing and snorting cocaine
-
-Put **cocaine** on a Create **depot** (the "table") under a **mechanical press** to
-compress it into a **Cocaine Block**: a real, flat (1 pixel tall) block placed on top of
-the depot where it was pressed. It drops nothing and cannot be picked up. **Right-click
-the block** (or the depot under it) to snort it, which applies the normal cocaine effects,
-intoxication/overuse penalties and the cocaine cooldown, and removes the block. It
-disappears if the depot is removed. The block is placed when a player is nearby (within
-2 chunks) and the space above the depot is empty.
-
 ## Buying and selling with villagers
 
 These are two custom **villager professions**, with normal trading screens,

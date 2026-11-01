@@ -14,7 +14,7 @@ block templates are opaque white. Keep filenames exactly as they are (lowercase)
 | --- | --- | --- |
 | `textures/item/` (24) | 16x16 | Transparent background. Higher power-of-two sizes (32x32, 64x64) also work. |
 | `textures/block/*_crop_stage0-7.png` (24) | 16x16 | Transparent background. Stage 0 is newly planted, stage 7 is fully grown. Crossed-plane model. |
-| `textures/block/herbalist_table.png`, `dealer_counter.png`, `cocaine_block.png` | 16x16 | Opaque; used on all six faces. |
+| `textures/block/herbalist_table.png`, `dealer_counter.png` | 16x16 | Opaque; used on all six faces. |
 | `textures/mob_effect/` (4) | 18x18 | Status effect icons: intoxication, nicotine_withdrawal, nicotine_patch, drunk. |
 
 ## Items

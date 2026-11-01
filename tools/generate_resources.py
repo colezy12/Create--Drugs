@@ -34,7 +34,6 @@ items = {
     'malt': ('Malt', 'wheat'),
     'beer': ('Beer', 'honey_bottle'),
     'beer_bucket': ('Beer Bucket', 'water_bucket'),
-    'cocaine_block': ('Cocaine Block', 'sugar'),
     'empty_beer_bottle': ('Empty Beer Bottle', 'glass_bottle'),
 }
 lang = {'itemGroup.create_drugs': 'Create: Drugs',
@@ -72,8 +71,6 @@ lang.update({
     'effect.create_drugs.nicotine_patch': 'Nicotine Patch Active',
     'tooltip.create_drugs.beer': 'Resistance I / Slowness I. Gets you drunk. Leaves an empty bottle you can throw.',
     'effect.create_drugs.drunk': 'Drunk',
-    'block.create_drugs.cocaine_block': 'Cocaine Block',
-     'tooltip.create_drugs.cocaine_block': 'Cannot be picked up. Right-click the block on the table to snort it.',
     'entity.create_drugs.thrown_beer_bottle': 'Thrown Beer Bottle',
     'tooltip.create_drugs.empty_beer_bottle': 'Use to throw. The drunker you are, the straighter it flies.',
     'tooltip.create_drugs.nicotine': 'Supplies nicotine. Cigars and vapes share dependence.',
@@ -98,13 +95,6 @@ lang.update({
     'subtitles.create_drugs.withdrawal': 'Unsettling whisper',
 })
 write(f'assets/{MOD}/lang/en_us.json', lang)
-cocaine_tex = f'{MOD}:block/cocaine_block' if (ROOT / f'assets/{MOD}/textures/block/cocaine_block.png').exists() else 'minecraft:block/white_concrete_powder'
-def plate(y0, y1):
-    return {'textures': {'all': cocaine_tex, 'particle': cocaine_tex}, 'elements': [{
-        'from': [1, y0, 1], 'to': [15, y1, 15], 'faces': {d: {'texture': '#all'} for d in ['north', 'south', 'east', 'west', 'up', 'down']}}]}
-write(f'assets/{MOD}/models/block/cocaine_block.json', plate(-3, -2))
-write(f'assets/{MOD}/models/item/cocaine_block.json', plate(0, 1))
-write(f'assets/{MOD}/blockstates/cocaine_block.json', {'variants': {'': {'model': f'{MOD}:block/cocaine_block'}}})
 sounds = {'consume': {
     'subtitle': 'subtitles.create_drugs.consume',
     'sounds': [f'{MOD}:consume'] if (ROOT / f'assets/{MOD}/sounds/consume.ogg').exists()
@@ -189,7 +179,6 @@ write(f'data/{MOD}/recipe/mechanical_crafting_vape.json', {
     'pattern': [' I ', ' C ', ' R '], 'key': {'I': {'item': 'create:iron_sheet'},
         'C': {'item': f'{MOD}:vape_cartridge'}, 'R': {'item': 'minecraft:redstone'}},
     'result': {'id': f'{MOD}:vape', 'count': 1}})
-processing('press_cocaine_block', 'pressing', ['cocaine'], 'cocaine_block')
 processing('press_malt', 'pressing', ['minecraft:wheat'], 'malt', 2)
 write(f'data/{MOD}/recipe/mix_beer.json', {
     'type': 'create:mixing', 'heat_requirement': 'heated', 'processing_time': 200,
