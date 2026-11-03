@@ -13,16 +13,16 @@
       "model": "create_drugs:block/cannabis_crop_stage3"
     },
     "age=4": {
-      "model": "create_drugs:block/cannabis_crop_stage4"
+      "model": "create_drugs:block/cannabis_crop_stage3"
     },
     "age=5": {
-      "model": "create_drugs:block/cannabis_crop_stage5"
+      "model": "create_drugs:block/cannabis_crop_stage3"
     },
     "age=6": {
-      "model": "create_drugs:block/cannabis_crop_stage6"
+      "model": "create_drugs:block/cannabis_crop_stage3"
     },
     "age=7": {
-      "model": "create_drugs:block/cannabis_crop_stage7"
+      "model": "create_drugs:block/cannabis_crop_stage4"
     }
   }
 }

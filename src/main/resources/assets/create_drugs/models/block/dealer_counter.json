@@ -1,3 +1,12 @@
 {
-  "parent": "minecraft:block/smithing_table"
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "create_drugs:block/counter_side",
+    "north": "create_drugs:block/counter_side",
+    "south": "create_drugs:block/counter_side",
+    "east": "create_drugs:block/counter_side",
+    "west": "create_drugs:block/counter_side",
+    "up": "create_drugs:block/dealer_counter",
+    "down": "create_drugs:block/counter_side"
+  }
 }

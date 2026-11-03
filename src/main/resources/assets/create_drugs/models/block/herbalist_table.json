@@ -1,3 +1,12 @@
 {
-  "parent": "minecraft:block/cartography_table"
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "create_drugs:block/counter_side_herb",
+    "north": "create_drugs:block/counter_side_herb",
+    "south": "create_drugs:block/counter_side_herb",
+    "east": "create_drugs:block/counter_side_herb",
+    "west": "create_drugs:block/counter_side_herb",
+    "up": "create_drugs:block/dealer_counter",
+    "down": "create_drugs:block/counter_side"
+  }
 }
