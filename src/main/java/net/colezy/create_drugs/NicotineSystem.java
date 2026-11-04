@@ -24,10 +24,12 @@ public final class NicotineSystem {
         return Math.clamp(player.getData(LongTermEffects.HISTORY).getCompound(KEY).getInt("patchSeconds"), 0, 7200);
     }
 
-    public static void dose(Player player) {
+    public static void dose(Player player) { dose(player, Config.DEPENDENCE_PER_USE.get()); }
+
+    public static void dose(Player player, int dependence) {
         if (!Config.LONG_TERM_EFFECTS.get() || player.isCreative() || player.isSpectator()) return;
         CompoundTag state = state(player);
-        state.putInt("points", Math.min(100, LongTermEffects.points(state) + Config.DEPENDENCE_PER_USE.get()));
+        state.putInt("points", Math.min(100, LongTermEffects.points(state) + dependence));
         state.putInt("abstinentSeconds", 0);
         state.putInt("recoverySeconds", 0);
         state.putInt("withdrawalSeconds", 0);

@@ -9,6 +9,10 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.neoforged.neoforge.common.NeoForge;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,6 +28,7 @@ public class Create_drugs {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(Registries.MOB_EFFECT, MODID);
+    public static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(Registries.POTION, MODID);
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(Registries.SOUND_EVENT, MODID);
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredHolder<MobEffect, MobEffect> INTOXICATION = EFFECTS.register("intoxication",
@@ -55,7 +60,14 @@ public class Create_drugs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register("main", () ->
             CreativeModeTab.builder().title(Component.translatable("itemGroup.create_drugs"))
                     .icon(() -> JOINT.get().getDefaultInstance())
-                    .displayItems((parameters, output) -> ITEMS.getEntries().forEach(item -> output.accept(item.get())))
+                    .displayItems((parameters, output) -> {
+                        ITEMS.getEntries().forEach(item -> output.accept(item.get()));
+                        for (var potion : NicotineContent.POTIONS) {
+                            for (Item type : new Item[]{Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION, Items.TIPPED_ARROW}) {
+                                output.accept(PotionContents.createItemStack(type, potion));
+                            }
+                        }
+                    })
                     .build());
     public Create_drugs(IEventBus bus, ModContainer container) {
         NicotineContent.init();
@@ -65,6 +77,8 @@ public class Create_drugs {
         BLOCKS.register(bus);
         ITEMS.register(bus);
         EFFECTS.register(bus);
+        POTIONS.register(bus);
+        NeoForge.EVENT_BUS.addListener(NicotineContent::registerBrewing);
         SOUNDS.register(bus);
         TABS.register(bus);
         LongTermEffects.ATTACHMENTS.register(bus);

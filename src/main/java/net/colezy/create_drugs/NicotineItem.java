@@ -42,8 +42,17 @@ public class NicotineItem extends Item {
         if (vape) NicotineSystem.puff(player);
         if (Config.COOLDOWN_SECONDS.get() > 0) player.getCooldowns().addCooldown(this, Config.COOLDOWN_SECONDS.get() * 20);
         player.awardStat(Stats.ITEM_USED.get(this));
-        server.sendParticles(vape ? ParticleTypes.CLOUD : ParticleTypes.SMOKE,
-                player.getX(), player.getEyeY(), player.getZ(), 6, 0.15, 0.1, 0.15, 0.01);
+        var look = player.getLookAngle();
+        var mouth = player.getEyePosition().add(look.scale(0.4)).add(0, -0.15, 0);
+        for (int i = 0; i < 6; i++) {
+            double speed = 0.05 + player.getRandom().nextDouble() * 0.1;
+            // count 0 makes the offsets a direction, so the smoke travels along the look vector
+            server.sendParticles(vape ? ParticleTypes.CLOUD : ParticleTypes.SMOKE,
+                    mouth.x, mouth.y, mouth.z, 0,
+                    look.x + player.getRandom().nextGaussian() * 0.08,
+                    look.y + player.getRandom().nextGaussian() * 0.08,
+                    look.z + player.getRandom().nextGaussian() * 0.08, speed);
+        }
         server.playSound(null, player.blockPosition(), NicotineContent.INHALE.get(), SoundSource.PLAYERS, 0.6F, 1.0F);
         if (!player.getAbilities().instabuild) {
             if (vape) stack.setDamageValue(stack.getDamageValue() + 1);
